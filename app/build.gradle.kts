@@ -1,14 +1,15 @@
 plugins {
     id("com.android.application")
     id("com.google.gms.google-services")
+    alias(libs.plugins.kotlin.android)
 }
 
 android {
-    namespace = "com.example.music_app"
+    namespace = "com.example.musicland"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.example.music_app"
+        applicationId = "com.example.musicland"
         minSdk = 26
         targetSdk = 35
         versionCode = 1
@@ -30,6 +31,9 @@ android {
     buildFeatures {
         viewBinding = true
     }
+    kotlinOptions {
+        jvmTarget = "17"
+    }
 }
 
 dependencies {
@@ -44,6 +48,10 @@ dependencies {
     implementation(libs.volley)
     implementation(libs.picasso)
     implementation(libs.glide)
+    implementation(libs.androidx.foundation.layout.android)
+    implementation(libs.androidx.material3.android)
+    implementation(libs.androidx.core.ktx)
+    implementation(libs.androidx.recyclerview)
     annotationProcessor(libs.glide.compiler)
     implementation(libs.circleimageview)
     implementation(libs.palette)
@@ -66,4 +74,5 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.test.junit)
     androidTestImplementation(libs.espresso.core)
+
 }

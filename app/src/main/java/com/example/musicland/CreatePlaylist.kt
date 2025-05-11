@@ -25,7 +25,7 @@ class CreatePlaylist : AppCompatActivity() {
             if (playlistName.isEmpty()) {
                 Toast.makeText(this, "Playlist name cannot be empty", Toast.LENGTH_SHORT).show()
             } else {
-                // TODO: Lưu playlist vào cơ sở dữ liệu hoặc danh sách
+                //Lưu playlist vào cơ sở dữ liệu hoặc danh sách
                 Toast.makeText(this, "Playlist '$playlistName' created!", Toast.LENGTH_SHORT).show()
                 finish() // hoặc chuyển sang Activity khác
             }

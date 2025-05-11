@@ -1,6 +1,8 @@
 package com.example.musicland
 
 import android.os.Bundle
+import android.widget.Button
+import android.widget.EditText
 import android.widget.ImageView
 import androidx.activity.ComponentActivity
 import androidx.activity.enableEdgeToEdge
@@ -31,6 +33,7 @@ class MainActivity : AppCompatActivity() {
         val playPauseImg: ImageView = findViewById(R.id.playPauseImg);
         val previousBtn: ImageView = findViewById(R.id.previousBtn);
         val nextBtn: ImageView = findViewById(R.id.nextBtn);
+
 
         musicRecyclerView.setHasFixedSize(true);
         musicRecyclerView.layoutManager = LinearLayoutManager(this)

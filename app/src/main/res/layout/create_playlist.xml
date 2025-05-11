@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".CreatePlaylist"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#191A1F">
+
+
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/titleCreatePlaylist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create New Playlist"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"/>
+
+    <!-- Playlist Name Input -->
+    <EditText
+        android:id="@+id/playlistNameInput"
+        android:layout_below="@id/titleCreatePlaylist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter playlist name"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#BBBBBB"
+        android:background="@drawable/round_back_10"
+        android:padding="15dp"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Description Input -->
+    <EditText
+        android:id="@+id/playlistDescriptionInput"
+        android:layout_below="@id/playlistNameInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#BBBBBB"
+        android:background="@drawable/round_back_10"
+        android:padding="15dp"
+        android:layout_marginTop="15dp"/>
+
+    <!-- Create Button -->
+    <Button
+        android:id="@+id/createPlaylistBtn"
+        android:layout_below="@id/playlistDescriptionInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create Playlist"
+        android:textColor="#FFFFFF"
+        android:drawableStart="@drawable/baseline_create_new_folder_24"
+        android:drawablePadding="10dp"
+        android:backgroundTint="#7965E5"
+        android:layout_marginTop="30dp"
+        android:padding="15dp"
+        android:background="@drawable/round_back_10"/>
+
+</LinearLayout>

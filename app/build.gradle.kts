@@ -53,6 +53,7 @@ dependencies {
     implementation(libs.androidx.recyclerview)
     implementation(libs.androidx.material3.android)
     implementation(libs.androidx.ui.tooling.preview.android)
+    implementation(libs.androidx.foundation.layout.android)
     annotationProcessor(libs.glide.compiler)
     implementation(libs.circleimageview)
     implementation(libs.palette)
@@ -75,4 +76,5 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.test.junit)
     androidTestImplementation(libs.espresso.core)
+
 }

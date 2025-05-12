@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".DetailViewActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#191A1F">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:layout_margin="15dp"
+        android:overScrollMode="ifContentScrolls">
+
+        <TextView
+            android:id="@+id/lyricsText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="6dp"
+            android:letterSpacing="0.01"
+            android:fontFamily="@font/lexend_semibold"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:text="oh lost \nlost in the words that we scream\n
+I don't even wanna do this anymore\n
+'cause you already know\n
+What you mean to me\n
+And our love's the only one\n
+worth fighting for\n
+Wherever you go\n
+that's where I'll follow\n
+Nobody's promised tomorrow\n
+So I'ma love you every night like\n
+It's the last night\n
+Like it's the last night\n
+If the world was ending\n
+I'd wanna be next to you\n
+If the party was over\n
+And our time on Earth was through\n
+I'd wanna hold you just for a while\n
+And die with a smile\n
+If the world was ending\n
+I'd wanna be next to you\n
+"
+            android:paddingBottom="24dp"/>
+    </ScrollView>
+    <RelativeLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:paddingBottom="10dp">
+
+        <LinearLayout
+            android:id="@+id/searchBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_back_10">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/back_icon" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tên bài hát"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tên nghệ sĩ"
+                android:textColor="#CCCCCC"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/menuBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/round_back_10">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/playlist_add_icon" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

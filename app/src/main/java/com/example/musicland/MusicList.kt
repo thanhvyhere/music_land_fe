@@ -9,3 +9,4 @@ data class MusicList(
     var isPlaying: Boolean,
     val musicUri: Uri
 )
+

@@ -62,3 +62,4 @@ class MusicAdapter(
 
     override fun getItemCount(): Int = list.size
 }
+

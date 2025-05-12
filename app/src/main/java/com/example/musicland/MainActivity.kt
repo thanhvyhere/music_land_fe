@@ -2,6 +2,8 @@ package com.example.musicland
 
 import android.content.pm.PackageManager
 import android.os.Bundle
+import android.widget.Button
+import android.widget.EditText
 import android.widget.ImageView
 import android.widget.LinearLayout
 import androidx.activity.ComponentActivity
@@ -37,6 +39,7 @@ class MainActivity : ComponentActivity() {
         val playPauseCard = findViewById<CardView>(R.id.playPauseCard)
         val playPauseImg = findViewById<ImageView>(R.id.playPauseImg)
         val nextBtn = findViewById<ImageView>(R.id.nextBtn)
+
 
         musicRecyclerView.setHasFixedSize(true);
         musicRecyclerView.layoutManager = LinearLayoutManager(this)

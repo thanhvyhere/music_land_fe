@@ -1,28 +1,3 @@
-<<<<<<< HEAD
-<?xml version="1.0" encoding="utf-8"?>
-<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@android:id/background"
-        android:gravity="center_vertical">
-        <shape android:shape="rectangle">
-            <solid android:color="#1AFFFFFF"></solid>
-            <corners android:radius="10dp"></corners>
-            <size android:height="5dp"></size>
-        </shape>
-
-    </item>
-    <item android:id="@android:id/progress"
-        android:gravity="center_vertical">
-        <clip>
-            <shape android:shape="rectangle">
-                <solid android:color="#F49BAB"></solid>
-                <corners android:radius="10dp"></corners>
-                <size android:height="5dp"></size>
-            </shape>
-        </clip>
-
-    </item>
-
-=======
 <?xml version="1.0" encoding="utf-8"?>
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:id="@android:id/background"
@@ -36,6 +11,7 @@
     <item android:id="@android:id/progress"
         android:gravity="center_vertical">
         <clip>
+
             <shape android:shape="rectangle">
                 <solid android:color="#7960E5"/>
                 <corners android:radius="10dp"/>
@@ -43,5 +19,4 @@
             </shape>
         </clip>
     </item>
->>>>>>> 664174d0febbff870543687e130c72b259bf30a2
 </layer-list>
